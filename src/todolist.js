@@ -66,7 +66,7 @@ const Todolist = () => {
                         </Typography>
                         <br/>
                         {list.complete ? <Button variant="contained" disabled >Completed</Button> : <Button variant="contained" onClick={()=>completelist(list.id)} >Complete</Button>}
-                        <Button variant="warning" style={{ marginLeft: 4 }} onClick={()=>deletelist_(list.id) color="error"}>Delete</Button>
+                        <Button variant="warning" style={{ marginLeft: 4 }} onClick={()=>deletelist_(list.id)}  color="error" >Delete</Button>
                     </AccordionDetails>
                 </Accordion>
 
